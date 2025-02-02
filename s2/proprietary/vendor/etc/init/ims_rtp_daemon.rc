@@ -6,7 +6,7 @@
 # imsdatadaemon starts with root and UID will be downgraded to RADIO.
 service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
     class main
-    user radio
+    user root
     group radio vendor_qti_diag inet log
 
 
